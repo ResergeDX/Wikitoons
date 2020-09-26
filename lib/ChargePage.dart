@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 //import 'package:splashscreen/splashscreen.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
 import 'package:wikitoons/toonlist.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:flare_flutter/flare_actor.dart';
+
 
 class Chargepage extends StatefulWidget {
   @override

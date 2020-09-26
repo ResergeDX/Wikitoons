@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'InfoSerie.dart';
+import 'transition.dart';
 
-class Toonlist extends StatelessWidget {
+class Toonlist extends StatefulWidget {
+  @override
+  _ToonlistState createState() => _ToonlistState();
+}
+
+class _ToonlistState extends State<Toonlist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -221,92 +227,181 @@ class Toonlist extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 130,
+            height: 150,
             width: 400,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
+                //Don gato
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
-                      //color: Colors.indigo,
-                      image: DecorationImage(
-                        image: AssetImage("assets/cartoon.png"),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.circular(10)),
+                    //color: Colors.indigo,
+                    image: DecorationImage(
+                      image: AssetImage("assets/Series60/don_gato.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: Container(
-                    margin: EdgeInsets.only(top: 85, left: 2),
-                    child: Text(
-                      "Cartoon",
-                      style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          ChangePageRoute(
+                            InfoSerie(
+                              serie: "DON GATO",
+                              creador: "William Hanna y Joseph Barbera",
+                              info:
+                                  "Don Gato, un gato con modales corteses que vive en un callejón con otro grupo de gatos los cuales se las ingenian para ganarse la vida, vigilados por el Oficial Matute.",
+                              assetImage: "assets/Series60/don_gato.jpg",
+                              tempCaps: [1, 30],
+                              colores: [Colors.yellow[400], Colors.purple[700]],
+                            ),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ),
+                //La pantera rosa
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
-                      //color: Colors.indigo,
+                      color: Colors.pink[400],
                       image: DecorationImage(
-                        image: AssetImage("assets/cartoon.png"),
-                        fit: BoxFit.cover,
+                        image: AssetImage("assets/Series60/pantera_rosa.jpg"),
+                        fit: BoxFit.contain,
                       ),
                       borderRadius: BorderRadius.circular(10)),
                   child: Container(
-                    margin: EdgeInsets.only(top: 85, left: 2),
-                    child: Text(
-                      "Cartoon",
-                      style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          ChangePageRoute(
+                            InfoSerie(
+                              serie: "LA PANTERA ROSA",
+                              creador: "David H. DePatie y Friz Freleng",
+                              info:
+                                  "La pantera rosa (título en inglés: The Pink Panther) es la primera serie del personaje homónimo, nacida a raíz del imprevisto éxito del personaje animado que aparecía en los créditos de la película homónima de Blake Edwards.",
+                              assetImage: "assets/Series60/pantera_rosa.jpg",
+                              tempCaps: [15, 124],
+                              colores: [
+                                Colors.pink[100],
+                                Colors.pinkAccent[400],
+                                //Colors.pink[700]
+                              ],
+                            ),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ),
+                //Picapiedras
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
-                        image: AssetImage("assets/cartoon.png"),
+                        image: AssetImage("assets/Series60/Picapiedras.jpg"),
                         fit: BoxFit.cover,
                       ),
                       borderRadius: BorderRadius.circular(10)),
                   child: Container(
-                    margin: EdgeInsets.only(top: 85, left: 2),
-                    child: Text(
-                      "Cartoon",
-                      style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          ChangePageRoute(
+                            InfoSerie(
+                              serie: "LOS PICAPIEDRAS",
+                              creador: "William Hanna y Joseph Barbera",
+                              info:
+                                  "La serie está centrada en Pedro Picapiedra y Pablo Mármol, un par de hombres que reflejaban la clase media de la sociedad estadounidense, y en sus sufridas esposas, Betty y Vilma, quienes tenían que aguantar las ideas de Pedro y la complicidad obligatoria de Pablo, de donde nunca salían bien.",
+                              assetImage: "assets/Series60/Picapiedras.jpg",
+                              tempCaps: [6, 166],
+                              colores: [
+                                Colors.amber[900],
+                                Colors.yellow,
+                              ],
+                            ),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ),
+                //Scooby doo
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
-                        image: AssetImage("assets/cartoon.png"),
+                        image: AssetImage("assets/Series60/scooby_doo.jpg"),
                         fit: BoxFit.cover,
                       ),
                       borderRadius: BorderRadius.circular(10)),
                   child: Container(
-                    margin: EdgeInsets.only(top: 85, left: 2),
-                    child: Text(
-                      "Cartoon",
-                      style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          ChangePageRoute(
+                            InfoSerie(
+                              serie: "SCOOBY DOO",
+                              creador: "William Hanna y Joseph Barbera",
+                              info:
+                                  "Las versiones más conocidas incluyen a un perro de raza gran danés parlante llamado Scooby-Doo y a cuatro adolescentes llamados Fred Jones, Daphne Blake, Vilma Dinkley y Shaggy Rogers, los cuales viajan a lo largo del mundo en una camioneta llamada \"La Máquina del Misterio\", por la cual se transportan de un lugar a otro resolviendo misterios relacionados con fantasmas y otras fuerzas sobrenaturales. ",
+                              assetImage: "assets/Series60/scooby_doo.jpg",
+                              tempCaps: [3, 42],
+                              colores: [
+                                Colors.blue[200],
+                                Colors.lightGreenAccent[400],
+                                Colors.orange,
+                                Colors.blue[200],
+                              ],
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ),
+                //Supersónicos
+                Container(
+                  margin: EdgeInsets.all(8),
+                  width: 250,
+                  decoration: BoxDecoration(
+                      //color: Colors.indigo,
+                      image: DecorationImage(
+                        image: AssetImage("assets/Series60/supersonicos.jpg"),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Container(
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          ChangePageRoute(
+                            InfoSerie(
+                              serie: "LOS SUPERSÓNICOS",
+                              creador: "William Hanna y Joseph Barbera",
+                              info:
+                                  "Los Supersónicos se encuentran en el año 2062 donde viven en casas suspendidas en el aire mediante enormes soportes y se transportan en aeroautos. La serie refleja como se vería la vida con el avance del tiempo y la tecnología.",
+                              assetImage: "assets/Series60/supersonicos.jpg",
+                              tempCaps: [3, 75],
+                              colores: [
+                                Colors.blue[100],
+                                Colors.grey,
+                                Colors.blue[100],
+                                Colors.grey,
+                              ],
+                            ),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ),
@@ -323,14 +418,14 @@ class Toonlist extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 130,
+            height: 150,
             width: 400,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -351,7 +446,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -372,7 +467,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -393,7 +488,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -425,14 +520,14 @@ class Toonlist extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 130,
+            height: 150,
             width: 400,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -453,7 +548,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -474,7 +569,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -495,7 +590,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -527,14 +622,14 @@ class Toonlist extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 130,
+            height: 150,
             width: 400,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -555,7 +650,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -576,7 +671,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -597,7 +692,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -629,14 +724,14 @@ class Toonlist extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 130,
+            height: 150,
             width: 400,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -657,7 +752,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -678,7 +773,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -699,7 +794,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -731,14 +826,14 @@ class Toonlist extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 130,
+            height: 150,
             width: 400,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -759,7 +854,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -780,7 +875,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(
@@ -801,7 +896,7 @@ class Toonlist extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(8),
-                  width: 100,
+                  width: 250,
                   decoration: BoxDecoration(
                       //color: Colors.indigo,
                       image: DecorationImage(

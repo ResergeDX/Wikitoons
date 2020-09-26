@@ -47,6 +47,7 @@ dev_dependencies:
   animated_text_kit: ^2.2.0
   flare_flutter: ^2.0.6
   flare_splash_screen: ^3.0.1
+  page_transition: "^1.1.6"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -63,6 +64,61 @@ flutter:
   assets:
     - assets/cartoon.png
     - assets/Television.flr
+    - assets/Series60/don_gato.jpg
+    - assets/Series60/pantera_rosa.jpg
+    - assets/Series60/Picapiedras.jpg
+    - assets/Series60/scooby_doo.jpg
+    - assets/Series60/supersonicos.jpg
+    - assets/Series70/capitan_cavernicola.jpg
+    - assets/Series70/dinamita.jpg
+    - assets/Series70/mandibulin.jpg
+    - assets/Series70/star_trek.jpg
+    - assets/Series70/tom_and_jerry.jpg
+    - assets/Series80/garfield.jpg
+    - assets/Series80/inspecto_gadget.jpg
+    - assets/Series80/pitufos.jpg
+    - assets/Series80/simpsons.jpg
+    - assets/Series80/thundercats.jpg
+    - assets/Series80/tortugas_ninja.jpg
+    - assets/Series90/animaniacs.jpg
+    - assets/Series90/bob_esponja.jpg
+    - assets/Series90/catdog.jpg
+    - assets/Series90/corage.jpg
+    - assets/Series90/dexter_lab.jpg
+    - assets/Series90/doug.png
+    - assets/Series90/hey_arnold.jpg
+    - assets/Series90/recreo.jpg
+    - assets/Series90/rocko_modern_life.jpg
+    - assets/Series90/thornberrys.jpg
+    - assets/Series2000/ben10.jpg
+    - assets/Series2000/billy_mandy.jpg
+    - assets/Series2000/chowder.jpg
+    - assets/Series2000/el tigre.jpg
+    - assets/Series2000/flapjack.jpg
+    - assets/Series2000/jimmy.jpg
+    - assets/Series2000/knd.jpg
+    - assets/Series2000/lazlo.jpg
+    - assets/Series2000/mansion_foster.jpg
+    - assets/Series2000/padrinos.jpeg
+    - assets/Series2000/samurai_jack.jpg
+    - assets/Series2000/timesquad.jpg
+    - assets/Series2010/adventure_time.jpg
+    - assets/Series2010/amphibia.jpg
+    - assets/Series2010/ducktales.jpg
+    - assets/Series2010/escandalosos.jpg
+    - assets/Series2010/gravity_falls.jpg
+    - assets/Series2010/gumball.jpg
+    - assets/Series2010/harvey beaks.jpg
+    - assets/Series2010/infinity_train.jpg
+    - assets/Series2010/loud house.jpg
+    - assets/Series2010/OK KO.jpg
+    - assets/Series2010/otgw.jpg
+    - assets/Series2010/owl_house.jpg
+    - assets/Series2010/phineas and ferb.jpg
+    - assets/Series2010/regular show.jpg
+    - assets/Series2010/STEVEN_UNIVERSE.jpg
+    
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
