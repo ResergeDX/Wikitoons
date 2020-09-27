@@ -88,8 +88,10 @@ flutter:
     - assets/Series90/doug.png
     - assets/Series90/hey_arnold.jpg
     - assets/Series90/recreo.jpg
+    - assets/Series90/ppg.jpg
     - assets/Series90/rocko_modern_life.jpg
     - assets/Series90/thornberrys.jpg
+    - assets/Series90/rugrats.jpg
     - assets/Series2000/ben10.jpg
     - assets/Series2000/billy_mandy.jpg
     - assets/Series2000/chowder.jpg
@@ -102,6 +104,7 @@ flutter:
     - assets/Series2000/padrinos.jpeg
     - assets/Series2000/samurai_jack.jpg
     - assets/Series2000/timesquad.jpg
+    - assets/Series2000/eds.jpg
     - assets/Series2010/adventure_time.jpg
     - assets/Series2010/amphibia.jpg
     - assets/Series2010/ducktales.jpg
@@ -114,7 +117,7 @@ flutter:
     - assets/Series2010/OK KO.jpg
     - assets/Series2010/otgw.jpg
     - assets/Series2010/owl_house.jpg
-    - assets/Series2010/phineas and ferb.jpg
+    - assets/Series2010/phineasferb.jpg
     - assets/Series2010/regular show.jpg
     - assets/Series2010/STEVEN_UNIVERSE.jpg
     

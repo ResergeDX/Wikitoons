@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
 import 'package:wikitoons/toonlist.dart';
 
-
 class Chargepage extends StatefulWidget {
   @override
   _ChargepageState createState() => _ChargepageState();
 }
 
+//Pantalla de carga con Animación
 class _ChargepageState extends State<Chargepage> {
   @override
   Widget build(BuildContext context) {

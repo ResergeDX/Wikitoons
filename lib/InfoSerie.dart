@@ -69,7 +69,7 @@ class _InfoSerieState extends State<InfoSerie> {
         Container(
           width: 50,
           child: FlatButton(
-            padding: EdgeInsets.only(right: 16, top: 10),
+            padding: EdgeInsets.only(right: 16, top: 7),
             onPressed: () {
               Navigator.pop(context);
             },
@@ -82,11 +82,11 @@ class _InfoSerieState extends State<InfoSerie> {
         ),
         Expanded(
             child: Container(
-          padding: EdgeInsets.only(top: 10),
+          padding: EdgeInsets.only(top: 5),
           child: Text(
             widget.serie,
             style: GoogleFonts.ranchers(
-              fontSize: 30,
+              fontSize: 26,
               fontWeight: FontWeight.bold,
               color: Colors.black,
             ),
@@ -112,7 +112,7 @@ class _InfoSerieState extends State<InfoSerie> {
               borderRadius: BorderRadius.circular(20),
               child: Image(
                 image: AssetImage(widget.assetImage),
-                height: 200,
+                height: 180,
               ),
             ),
           ),
